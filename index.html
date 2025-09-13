@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>
+    <style>
+    
+    :root {
+        --mobile-width: 950px;
+    }
+
+    body {
+        margin: 0;
+        background-color: lightblue;
+        padding: 1vw;
+    }
+
+    #middle {
+        display: flex;
+        flex-direction: column;
+        color: black;
+        gap: 2rem;
+
+        width: auto;
+        margin-left: calc(0.5 * (100vw - var(--mobile-width)) / 2);
+        margin-right: calc(0.5 * (100vw - var(--mobile-width)) / 2);
+
+        min-height: 100vh;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: 30px;
+        background-color: #f5f5f5;
+        padding: 1rem;
+        border-radius: 8px;
+        border-width: 5px;
+        border-color: black;
+        box-shadow: 3px 3px;
+    }
+
+    #title {
+        color: lightskyblue;
+        text-shadow: -0.5px 0 grey, 0 1px grey, 0.5px 0 grey, 0 -0.5px grey;
+        font-size: 3rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    nav {
+        float: right;
+        padding: 1rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        list-style-type: none;
+        margin-right: auto;
+        font-size: 2.5rem;
+
+        a {
+            color: lightskyblue;
+            text-decoration: none;
+        }
+
+        & :hover {
+            color: blue;
+        }
+    }
+
+    article {
+        background-color: whitesmoke;
+        height: auto;
+        padding: 0.5rem;
+        border-radius: 8px;
+        border-width: 5px;
+        /* border-color: grey; */
+        /* rgba(255, 100, 100, 0.4); */
+        font-family: arial;
+        padding: 3rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    @media (width <= 1170px) and (height > 1000px) {
+        body {
+            background-color: red;
+        }
+
+        #title {
+        font-size: 6rem;
+        }
+
+        nav ul li {
+        font-size: 4rem;
+        }
+
+        h1 {
+        font-size: 4rem;
+        }
+
+        p {
+        font-size: 3rem;
+        /* line-spacing:  */
+        }
+    }
+
+    </style>
+</head>
+
+<body>
+<div id="middle">
+        <header>
+            <div id="title">Website</div>
+
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Other</a></li>
+                    <li><a href="">Other</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article>
+            <h1>An amazing article</h1>
+
+            <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                </p>
+        </article>
+    </div>
+</body>
