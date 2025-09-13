@@ -30,7 +30,6 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    flex-grow: 0;
     font-size: 30px;
     background-color: #f5f5f5;
     padding: 1rem;
@@ -55,7 +54,6 @@ ul {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 20px;
     padding: 0;
     margin: 0;
 }
@@ -100,9 +98,31 @@ p {
     margin-bottom: unset;
 }
 
-@media (950px < width) {
+@media (width <= 950px) {
+    #middle {
+        margin: 10px;
+    }
+
+    header {
+        gap: 1rem;
+    }
+
+    ul {
+        gap: 20px;
+    }
+}
+
+@media (width > 950px) {
     #middle {
         margin-left: calc(var(--margin-scale) * (100vw - var(--mobile-width)) / 2);
         margin-right: calc(var(--margin-scale) * (100vw - var(--mobile-width)) / 2);
+    }
+
+    header {
+        gap: 0.5rem;
+    }
+
+    ul {
+        gap: 20px;
     }
 }
