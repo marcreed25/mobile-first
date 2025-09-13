@@ -76,6 +76,9 @@ nav li {
 }
 
 article {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     background-color: whitesmoke;
     height: auto;
     padding: 0.5rem;
