@@ -15,8 +15,8 @@ body {
     gap: 2rem;
 
     width: auto;
-    margin-left: calc(0.5 * (100vw - var(--mobile-width)) / 2);
-    margin-right: calc(0.5 * (100vw - var(--mobile-width)) / 2);
+    margin-left: max(0px, calc(0.5 * (100vw - var(--mobile-width)) / 2));
+    margin-right: max(0px, calc(0.5 * (100vw - var(--mobile-width)) / 2));
 
     min-height: 100vh;
 }
