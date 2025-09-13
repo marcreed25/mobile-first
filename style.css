@@ -1,4 +1,5 @@
 :root {
+    --margin-scale: 1;
     --mobile-width: 950px;
 }
 
@@ -95,8 +96,8 @@ p {
 
 @media (950px < width) {
     #middle {
-        margin-left: calc(0.5 * (100vw - var(--mobile-width)) / 2);
-        margin-right: calc(0.5 * (100vw - var(--mobile-width)) / 2);
+        margin-left: calc(var(--margin-scale) * (100vw - var(--mobile-width)) / 2);
+        margin-right: calc(var(--margin-scale) * (100vw - var(--mobile-width)) / 2);
     }
 }
 
