@@ -14,10 +14,8 @@ body {
     flex-direction: column;
     color: black;
     gap: 2rem;
-
     width: auto;
-
-    min-height: 100vh;
+    min-height: calc(100vh - 2vw);
 }
 
 #middle > * {
@@ -32,6 +30,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-grow: 0;
     font-size: 30px;
     background-color: #f5f5f5;
     padding: 1rem;
@@ -80,18 +79,21 @@ article {
     background-color: whitesmoke;
     height: auto;
     padding: 0.5rem;
-    /* border-color: grey; */
-    /* rgba(255, 100, 100, 0.4); */
+    flex-grow: 1;
     font-family: arial;
     padding: 3rem;
 }
 
 h1 {
     font-size: 2rem;
+    margin-top: unset;
+    margin-bottom: unset;
 }
 
 p {
     font-size: 1.5rem;
+    margin-top: unset;
+    margin-bottom: unset;
 }
 
 @media (950px < width) {
