@@ -37,14 +37,14 @@ header {
 #title {
     color: lightskyblue;
     text-shadow: -0.5px 0 grey, 0 1px grey, 0.5px 0 grey, 0 -0.5px grey;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: auto;
     margin-bottom: auto;
 }
 
 nav {
     float: right;
-    padding: 1rem;
+    /* padding: 1rem; */
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -61,7 +61,7 @@ ul {
 nav li {
     list-style-type: none;
     margin-right: auto;
-    font-size: 2.5rem;
+    font-size: 2rem;
 
     a {
         color: lightskyblue;
@@ -86,11 +86,11 @@ article {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 p {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 @media (width <= 1170px) and (height > 1000px) {
