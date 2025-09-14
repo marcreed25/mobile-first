@@ -14,7 +14,7 @@ Portrait
 
 Landscape
 
-![](screenshots/mobile_landscape.jpeg "")
+<img src="screenshots/mobile_landscape.jpeg" width="450">
 
 ### Desktop
 
