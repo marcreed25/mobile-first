@@ -24,7 +24,7 @@ Full width
 
 Reduced window width
 
-![](screenshots/desktop_reduced_window_width.png "")
+<img src="screenshots/desktop_reduced_window_width.png" width="650">
 
 ## Conclusion
 
