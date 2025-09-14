@@ -1,6 +1,6 @@
 :root {
-    --margin-scale: 1;
-    --mobile-width: 950px;
+    --margin-scale: 0.35;
+    --mobile-width: 390px;
 }
 
 body {
@@ -36,6 +36,7 @@ header {
 }
 
 #title {
+    display: flex;
     color: hsl(203, 92%, 75%);
     text-shadow: -0.5px 0 grey, 0 1px grey, 0.5px 0 grey, 0 -0.5px grey;
     font-size: 2.5rem;
@@ -54,13 +55,14 @@ ul {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: flex-start;
     padding: 0;
     margin: 0;
 }
 
 nav li {
     list-style-type: none;
-    margin-right: auto;
+    /* margin-right: auto; */
     font-size: 2rem;
 
     a {
@@ -98,7 +100,8 @@ p {
     margin-bottom: unset;
 }
 
-@media (width <= 950px) {
+/* Mobile portrait */
+@media (width <= 390px) {
     #middle {
         margin: 10px;
     }
@@ -107,22 +110,51 @@ p {
         gap: 1rem;
     }
 
+    #title {
+        width: 100%;
+        justify-content: center;
+    }
+
     ul {
-        gap: 20px;
+        gap: 1.5rem;
+        justify-content: center;
     }
 }
 
-@media (width > 950px) {
+/* Mobile landscape or desktop */
+@media (width > 391px) {
     #middle {
         margin-left: calc(var(--margin-scale) * (100vw - var(--mobile-width)) / 2);
         margin-right: calc(var(--margin-scale) * (100vw - var(--mobile-width)) / 2);
     }
 
     header {
-        gap: 0.5rem;
+        gap: 1rem;
+    }
+
+    #title {
+        width: auto;
+        justify-content: flex-start;
     }
 
     ul {
-        gap: 20px;
+        gap: 1rem;
+    }
+}
+
+/* Mobile landscape or desktop with reduced window width */
+@media (width > 391px) and (width <= 840px) {
+    header {
+        flex-direction: column;
+    }
+
+    #title {
+        width: auto;
+        justify-content: center;
+    }
+
+    ul {
+        justify-content: center;
+        gap: 1rem;
     }
 }
